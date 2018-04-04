@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
           if (OnLadder)
           {
                rBody2D.gravityScale = 0f;
-               ClimbVelocity = ClimbSpeed * Input.GetAxisRaw("Vertical");
+               ClimbVelocity = ClimbSpeed * Input.GetAxisRaw("Jump");
                Move(rBody2D.velocity.x, ClimbVelocity);
 
           }
